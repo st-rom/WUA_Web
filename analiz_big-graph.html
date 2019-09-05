@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Аналітика | WUA</title>
+    <link rel="stylesheet" href="styles/analiz-graph.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/analiz-selectors.css">
+    <link rel="stylesheet" href="styles/spin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.23.0/slimselect.min.css">
+</head>
+<body>
+    <header class="page_header">
+    <img src="imgs/logo2.png" class="page_header__logo">
+    <nav class="page_header__main_buttons_panel">
+        <button onclick="location.href='https://akoganalyst.wixsite.com/wua2019'" type="button" class="page_header__main_buttons_panel__button_nav">
+            ГОЛОВНА
+        </button>
+        <button onclick="location.href='market_find-lot.html'" type="button" class="page_header__main_buttons_panel__button_nav">
+            WASTE МАРКЕТ
+        </button>
+        <button onclick="location.href='analiz_big-graph.html'" type="button" class="page_header__main_buttons_panel__button_nav">
+            АНАЛІТИКА
+        </button>
+        <button onclick="location.href='http://www.google.com'" type="button" class="page_header__main_buttons_panel__button_nav">
+            ПРО ПРОЕКТ
+        </button>
+        <button onclick="location.href='http://www.google.com'" type="button" class="page_header__main_buttons_panel__button_nav">
+            КОНТАКТИ
+        </button>
+        <!--<div class="page_header__main_buttons_panel__div_search">-->
+            <!--<input class='page_header__main_buttons_panel__button_search' type="text" placeholder="        Search . . ." required>-->
+        <!--</div>-->
+    </nav>
+    <nav>
+        <!--<button onclick="location.href='http://www.google.com'" type="button" class="page_header__smaller_buttons_panel__button_nav">-->
+            <!--Мої закладки-->
+        <!--</button>-->
+        <!--<button onclick="location.href='http://www.google.com'" type="button" class="page_header__smaller_buttons_panel__button_nav">-->
+            <!--Мій кабінет-->
+        <!--</button>-->
+        <!--<button onclick="location.href='http://www.google.com'" type="button" class="page_header__smaller_buttons_panel__button_nav lang">-->
+            <!--<span class="lang&#45;&#45;selected">UA</span> / EN-->
+        <!--</button>-->
+    </nav>
+</header>
+    <nav class="stat-selector">
+        <button onclick="location.href='analiz_big-graph.html'" type="button" class="stat-selector__button stat-selector__button__selected">
+            Генерація відходів
+        </button>
+        <button onclick="location.href='analiz_map.html'" type="button" class="stat-selector__button">
+            Карта України
+        </button>
+        <button class="stat-selector__button">
+            Інше
+        </button>
+    </nav>
+    <section class="stat-content">
+        <aside class="filters">
+            <div class="filters__param-ver">
+                <label for="city-selector" class="label_selector">Виберіть область:</label>
+                <select name="city" id="city-selector" class="selector_city"></select>
+            </div>
+            <div class="filters__param-ver">
+                <label for="waste-selector" class="label_selector">Категорія відходів:</label>
+                <select name="waste" id="waste-selector" class="selector_city"></select>
+            </div>
+            <div class="filters__param-ver">
+                <label for="year-selector" class="label_selector">Статистика по рокам:</label>
+                <select name="year" id="year-selector"  multiple></select>
+            </div>
+            <div class="filters__param-hor">
+                <label class="label_selector">Від номера в рейтингу:</label>
+                <div>
+                    <button type='button' class="button_arrows button_arrows__left" onclick="ArOper(-1, 0)">-</button>
+                    <input class="input_number input_number__first" onchange="inputNumber(0, 0)" type="number" step="1" min="1">
+                    <button type='button' class="button_arrows button_arrows__right" onclick="ArOper(1, 0)">+</button>
+                </div>
+            </div>
+
+            <div class="filters__param-hor">
+                <label class="label_selector">Кількість даних на сторінці:</label>
+                <div>
+                    <button type='button' class="button_arrows button_arrows__left" onclick="ArOper(-1, 1)">-</button>
+                    <input class="input_number input_number__second" onchange="inputNumber(0, 1)" type="number" step="1" min="2" max="11">
+                    <button type='button' class="button_arrows button_arrows__right" onclick="ArOper(1, 1)">+</button>
+                </div>
+            </div>
+
+            <div class="filters__param-ver">
+                <label class="label_selector">Пошук по назві:</label>
+                <div class="selector_city name_search">
+                    <input type="text" placeholder="Search.."  autocomplete="off" class="name_search__field" onkeyup="filterInputFunction()">
+                    <div class="name_search__list">
+                        <!--<a href="#about">About</a>-->
+                        <!--<a href="#base">Base</a>-->
+                        <!--<a href="#blog">Blog</a>-->
+                        <!--<a href="#contact">Contact</a>-->
+                        <!--<a href="#custom">Custom</a>-->
+                        <!--<a href="#support">Support</a>-->
+                        <!--<a href="#tools">Tools</a>-->
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main class="main_content">
+            <pre class="title_graph"></pre>
+            <div class="filters__param-hor box">
+                <pre class="scroller_text"></pre>
+                <button type='button' class="button_scroll" onclick="ArOper(-1, 2)"><</button>
+                <button type='button' class="button_scroll" onclick="ArOper(1, 2)">></button>
+            </div>
+            <svg>
+            </svg>
+        </main>
+    </section>
+    <div id="spinner"></div>
+    <script type="module">
+        import {ArOper, filterInputFunction} from "./scripts/analiz_big-graph.js";
+        window.ArOper = ArOper;
+        window.filterInputFunction = filterInputFunction
+    </script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.23.0/slimselect.min.js"></script>
+    <script type="module" src="scripts/analiz_big-graph.js"></script>
+</body>
+</html>

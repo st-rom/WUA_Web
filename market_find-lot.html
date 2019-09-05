@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WUA</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+</head>
+<body>
+    <header class="page_header">
+        <img src="imgs/logo2.png" class="page_header__logo">
+        <nav>
+            <button onclick="location.href='market_find-lot.html'" type="button" class="page_header__main_buttons_panel__button_nav">
+                WASTE МАРКЕТ
+            </button>
+            <button onclick="location.href='analiz_big-graph.html'" type="button" class="page_header__main_buttons_panel__button_nav">
+                АНАЛІТИКА
+            </button>
+            <button onclick="location.href='http://www.google.com'" type="button" class="page_header__main_buttons_panel__button_nav">
+                ПРО НАС
+            </button>
+            <button onclick="location.href='http://www.google.com'" type="button" class="page_header__main_buttons_panel__button_nav">
+                КОНТАКТИ
+            </button>
+            <div class="page_header__main_buttons_panel__div_search">
+                <input class='page_header__main_buttons_panel__button_search' type="text" placeholder="       Search . . ." required>
+            </div>
+        </nav>
+        <nav>
+            <button onclick="location.href='http://www.google.com'" type="button" class="page_header__smaller_buttons_panel__button_nav">
+                Мої закладки
+            </button>
+            <button onclick="location.href='http://www.google.com'" type="button" class="page_header__smaller_buttons_panel__button_nav">
+                Мій кабінет
+            </button>
+            <button onclick="location.href='http://www.google.com'" type="button" class="page_header__smaller_buttons_panel__button_nav lang">
+                <span class="lang--selected">UA</span> / EN
+            </button>
+        </nav>
+    </header>
+    <section class="page_content">
+        <header class="page_content__header">
+            <button onclick="location.href='market_create-lot.html'" type="button" class="page_content__header__button">
+                Я ХОЧУ УТИЛІЗУВАТИ
+            </button>
+            <button onclick="location.href='market_find-lot.html'" class="page_content__header__button page_content__header__button--selected">
+                Я ХОЧУ ЗНАЙТИ ПЕРЕРОБКУ
+            </button>
+        </header>
+        <p class="page_content__title">
+            <strong>Підприємства, що приймають</strong><br>
+            <span>та переробляють сміття</span>
+        </p>
+        <form class="page_content__form">
+            <!--<label for="city_name"></label>-->
+            <select name="city" id='city_name' class="page_content__selector_city">
+                <option value="">Виберіть місто</option>
+                <option value="kyiv">Київ</option>
+                <option value="khmelnytsky">Хмельницкий</option>
+                <option value="lviv">Львів</option>
+                <option value="kharkiv">Харків</option>
+                <option value="odesa">Одеса</option>
+            </select>
+            <input name="waste_type" class="page_content__waste_type" placeholder="Тип відходів">
+            <button type="submit" class="page_content__submit_button">Пошук</button>
+        </form>
+        <section class="page_content__result_block">
+            <p><strong>Шини</strong> переробляють такі підприємства:</p>
+            <nav class="page_content__result_block__switchers">
+                <button class="page_content__header__button page_content__header__button--selected">
+                    СПИСОК
+                </button>
+                <button class="page_content__header__button">
+                    КАРТА
+                </button>
+            </nav>
+            <ul class="page_content__result_block__results">
+                <li class="page_content__result_block__results__sample">
+                    <img src="imgs/factory1.jpg" class="page_content__result_block__results__sample__picture">
+                    <h5 class="page_content__result_block__results__sample__name">ВТОРМЕТ</h5>
+                    <address class="page_content__result_block__results__sample__address-and-worktime">м. Київ, вул. Мечнікова, 125а</address>
+                    <span class="page_content__result_block__results__sample__address-and-worktime">7:00 - 17:00 НД - вихідний</span>
+                </li>
+                <li class="page_content__result_block__results__sample">
+                    <img src="imgs/factory1.jpg" class="page_content__result_block__results__sample__picture">
+                    <h5 class="page_content__result_block__results__sample__name">ВТОРМЕТ</h5>
+                    <address class="page_content__result_block__results__sample__address-and-worktime">м. Київ, вул. Мечнікова, 125а</address>
+                    <span class="page_content__result_block__results__sample__address-and-worktime">7:00 - 17:00 НД - вихідний</span>
+                </li>
+                <li class="page_content__result_block__results__sample">
+                    <img src="imgs/factory1.jpg" class="page_content__result_block__results__sample__picture">
+                    <h5 class="page_content__result_block__results__sample__name">ВТОРМЕТ</h5>
+                    <address class="page_content__result_block__results__sample__address-and-worktime">м. Київ, вул. Мечнікова, 125а</address>
+                    <span class="page_content__result_block__results__sample__address-and-worktime">7:00 - 17:00 НД - вихідний</span>
+                </li>
+            </ul>
+            <ul class="page_content__result_block__results">
+                <li class="page_content__result_block__results__sample">
+                    <img src="imgs/factory1.jpg" class="page_content__result_block__results__sample__picture">
+                    <h5 class="page_content__result_block__results__sample__name">ВТОРМЕТ</h5>
+                    <address class="page_content__result_block__results__sample__address-and-worktime">м. Київ, вул. Мечнікова, 125а</address>
+                    <span class="page_content__result_block__results__sample__address-and-worktime">7:00 - 17:00 НД - вихідний</span>
+                </li>
+                <li class="page_content__result_block__results__sample">
+                    <img src="imgs/factory1.jpg" class="page_content__result_block__results__sample__picture">
+                    <h5 class="page_content__result_block__results__sample__name">ВТОРМЕТ</h5>
+                    <address class="page_content__result_block__results__sample__address-and-worktime">м. Київ, вул. Мечнікова, 125а</address>
+                    <span class="page_content__result_block__results__sample__address-and-worktime">7:00 - 17:00 НД - вихідний</span>
+                </li>
+            </ul>
+        </section>
+    </section>
+</body>
+</html>

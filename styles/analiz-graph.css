@@ -1,0 +1,88 @@
+<<<<<<< HEAD
+svg {
+=======
+svg:not(.svg__color-bar) {
+>>>>>>> project update
+  width: 1500px;
+  height: 1000px;
+  margin: 30px auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  padding-top: 50px;
+}
+
+.bar {
+  fill: #adbeb8;
+}
+.bar__limit {
+  stroke: #FED966;
+  stroke-width: 3;
+  stroke-dasharray: 3, 6;
+}
+
+text {
+  font-size: 12px;
+}
+text.divergence {
+  font-size: 14px;
+  fill: #3a4741;
+}
+text.value {
+  font-size: 14px;
+}
+text.title {
+  font-size: 38px;
+  font-weight: 600;
+}
+text.label {
+  font-size: 18px;
+  font-weight: 500;
+}
+text.source {
+  font-size: 10px;
+}
+
+path, line {
+  stroke: gray;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+.grid .tick line {
+  stroke: #9FAAAE;
+  stroke-opacity: 0.3;
+}
+
+.subBar {
+  fill: gray;
+  opacity: 0.5;
+}
+
+.mover {
+  stroke: black;
+  stroke-opacity: 0.1;
+  fill: #6ba188;
+  fill-opacity: 0.5;
+}
+
+.scroll_bar {
+  background: red;
+  border: black solid 2px;
+}
+.option_with_hint {
+  background-color: blue;
+}
+
+g#g5203 path {
+  cursor: crosshair;
+}
+
+<<<<<<< HEAD
+/*# sourceMappingURL=analiz.css.map */
+=======
+/*# sourceMappingURL=analiz-graph.css.map */
+>>>>>>> project update

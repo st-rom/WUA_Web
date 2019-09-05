@@ -1,0 +1,23 @@
+{
+  "name": "wua_proba",
+  "version": "1.0.0",
+  "description": "prob",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+<<<<<<< HEAD
+    "node-sass": "^4.12.0"
+=======
+    "node-sass": "^4.12.0",
+    "slim-select": "^1.23.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0"
+>>>>>>> project update
+  }
+}

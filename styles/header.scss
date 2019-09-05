@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
+
+
+body{
+  margin: 110px 2.5% 0 2.5%;
+}
+
+
+.page_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: fixed;
+  background: white;
+  padding: 25px 2.5%;
+  width:95%;
+  top: 0;
+  height: 60px;
+  border-bottom: gainsboro 1px solid;
+  left: 0;
+  z-index: 5;
+  &__logo{
+    width: 150px;
+    height: 60px;
+  }
+  &__main_buttons_panel{
+<<<<<<< HEAD
+    display: flex;
+
+    &__button_nav{
+=======
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    //& :hover{
+    //  background-color: #f2fffa;
+    //}
+    &__button_nav{
+      //border: solid 3px black;
+>>>>>>> project update
+      background: None;
+      height: 50px;
+      font-weight: bold;
+      font-size: 20px;
+      border: None;
+      font-family: 'Roboto', sans-serif;
+      color: black;
+      cursor: pointer;
+      margin-left: 20px;
+<<<<<<< HEAD
+=======
+      //line-height: 50px;
+      text-align: center;
+>>>>>>> project update
+    }
+    &__div_search {
+      display: inline-block;
+      position: relative;
+      &:after {
+        content: "";
+        background: black;
+        width: 4px;
+        height: 20px;
+        position: absolute;
+        top: 40px;
+        right: 2px;
+        transform: rotate(135deg);
+      }
+    }
+    &__button_search{
+      color: black;
+      font-size: 16px;
+      background: transparent;
+      width: 25px;
+      height: 25px;
+      padding: 10px;
+      border: solid 3px black;
+      outline: none;
+      border-radius: 35px;
+      box-shadow: None;
+      transition: width 0.5s;
+      &::placeholder {
+        color: black;
+        opacity: 1;
+      }
+      &:focus, &:valid {
+        width: 200px;
+      }
+
+    }
+  }
+  &__smaller_buttons_panel{
+    display: flex;
+    &__button_nav{
+      background: None;
+      height: 40px;
+      font-weight: bold;
+      font-size: 18px;
+      border: None;
+      font-family: 'Roboto', sans-serif;
+      color: darkgray;
+      cursor: pointer;
+    }
+  }
+}

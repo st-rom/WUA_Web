@@ -1,0 +1,90 @@
+<<<<<<< HEAD
+svg {
+=======
+svg:not(.svg__color-bar){
+>>>>>>> project update
+  width: 1500px;
+  height: 1000px;
+  margin: 30px auto;
+
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 50px;
+}
+
+.bar{
+  fill: #adbeb8;
+  &__limit {
+    stroke: #FED966;
+    stroke-width: 3;
+    stroke-dasharray: 3, 6;
+  }
+}
+
+text {
+  font-size: 12px;
+  &.divergence {
+    font-size: 14px;
+    fill: #3a4741 ;
+  }
+  &.value {
+    font-size: 14px;
+  }
+  &.title {
+    font-size: 38px;
+    font-weight: 600;
+  }
+  &.label {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &.source {
+    font-size: 10px;
+  }
+}
+
+path, line {
+  stroke: gray;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+.grid .tick line {
+  stroke: #9FAAAE;
+  stroke-opacity: 0.3;
+}
+
+.subBar {
+  fill: gray;
+  opacity: 0.5;
+}
+
+.mover {
+  stroke: black;
+  stroke-opacity: .1;
+  fill: #6ba188;
+  fill-opacity: .5;
+}
+
+.scroll_bar{
+  background: red;
+  border: black solid 2px ;
+  &__line{
+  }
+}
+
+.option_with_hint{
+  background-color: blue;
+}
+
+g#g5203 path{
+  cursor: crosshair;
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> project update
