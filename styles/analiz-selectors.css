@@ -72,12 +72,9 @@
   width: 160px;
   margin: 0 10px 15px 10px;
 }
-<<<<<<< HEAD
-=======
 .label_selector.wider {
   width: 220px;
 }
->>>>>>> project update
 
 .input_number {
   width: 48px;
@@ -138,20 +135,12 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
-<<<<<<< HEAD
-.name_input {
-=======
 .name_search {
->>>>>>> project update
   min-width: 240px;
   overflow: auto;
   height: auto;
 }
-<<<<<<< HEAD
-.name_input a {
-=======
 .name_search a {
->>>>>>> project update
   color: black;
   height: 41px;
   overflow: hidden;
@@ -161,22 +150,14 @@ input[type=number]::-webkit-outer-spin-button {
   border-bottom: 1px solid #c0c0c0;
   margin-right: 15px;
 }
-<<<<<<< HEAD
-.name_input__field {
-=======
 .name_search__field {
->>>>>>> project update
   width: 300px;
   height: 45px;
   border: none;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
 }
-<<<<<<< HEAD
-.name_input__list {
-=======
 .name_search__list {
->>>>>>> project update
   position: absolute;
   max-height: 410px;
   width: 330px;
@@ -222,10 +203,7 @@ button::-moz-focus-inner, input::-moz-focus-inner, select::-moz-focus-inner {
   line-height: 51px;
   text-align: center;
   margin: 5px;
-<<<<<<< HEAD
-=======
   padding: 15px;
->>>>>>> project update
 }
 
 .title_graph {
@@ -254,8 +232,4 @@ div.ss-multi-selected {
   font-family: "Roboto", sans-serif;
 }
 
-<<<<<<< HEAD
-/*# sourceMappingURL=selectors.css.map */
-=======
 /*# sourceMappingURL=analiz-selectors.css.map */
->>>>>>> project update

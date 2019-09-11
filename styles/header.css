@@ -22,13 +22,9 @@ body {
   height: 60px;
 }
 .page_header__main_buttons_panel {
-<<<<<<< HEAD
-  display: flex;
-=======
   width: 50%;
   display: flex;
   justify-content: space-around;
->>>>>>> project update
 }
 .page_header__main_buttons_panel__button_nav {
   background: None;
@@ -40,10 +36,7 @@ body {
   color: black;
   cursor: pointer;
   margin-left: 20px;
-<<<<<<< HEAD
-=======
   text-align: center;
->>>>>>> project update
 }
 .page_header__main_buttons_panel__div_search {
   display: inline-block;

@@ -24,11 +24,6 @@ body{
     height: 60px;
   }
   &__main_buttons_panel{
-<<<<<<< HEAD
-    display: flex;
-
-    &__button_nav{
-=======
     width: 50%;
     display: flex;
     justify-content: space-around;
@@ -37,7 +32,6 @@ body{
     //}
     &__button_nav{
       //border: solid 3px black;
->>>>>>> project update
       background: None;
       height: 50px;
       font-weight: bold;
@@ -47,11 +41,8 @@ body{
       color: black;
       cursor: pointer;
       margin-left: 20px;
-<<<<<<< HEAD
-=======
       //line-height: 50px;
       text-align: center;
->>>>>>> project update
     }
     &__div_search {
       display: inline-block;
